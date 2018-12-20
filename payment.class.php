@@ -25,9 +25,9 @@ class Payment
 
 		$curl_response = curl_exec($curl);
 
-		$status =  json_decode($curl_response);
+		$token =  json_decode($curl_response);
 
-		return $status
+		return $token
 
 	}
 }
