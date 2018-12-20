@@ -7,14 +7,14 @@
 class Payment
 {
 	
-	// function __construct()
-	// {
-	// 	# code...
-	// }
+	function __construct()
+	{
+		$url = 'https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials';.
+	}
 
 	function getAuthentication()
 	{
-		$url = 'https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials';
+		$this->url = $url;
 
 		$curl = curl_init();
 		curl_setopt($curl, CURLOPT_URL, $url);
@@ -27,7 +27,7 @@ class Payment
 
 		$status =  json_decode($curl_response);
 
-		return $status
+		echo $status
 
 	}
 }
