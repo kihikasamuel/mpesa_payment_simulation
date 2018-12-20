@@ -27,7 +27,7 @@ class Payment
 
 		$status =  json_decode($curl_response);
 
-		echo $status
+		return $status
 
 	}
 }
