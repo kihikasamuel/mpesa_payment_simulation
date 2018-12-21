@@ -1,7 +1,9 @@
 <?php
 	require_once('payment.class.php');
 
-	$pay = Payment();
+	$pay = new Payment();
 
-	echo getAuthentication();
+	// echo $token = $pay->getAuthentication();
+
+	echo $pay->payMethodC2B();
 ?>
